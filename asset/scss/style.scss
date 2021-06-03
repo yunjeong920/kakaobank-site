@@ -13,7 +13,7 @@ $fontSizeSBig: 20px;
 
 //title text size
 $titleFontSizeSmall: 22px;
-$titleFontSizeNormal: 26px;
+$titleFontSizeNormal: 30px;
 $titleFontSizeMid: 40px;
 $titleFontSizeBig: 50px;
 
@@ -37,6 +37,8 @@ $gbtnColorHover: #99A5CD;
 
 //table bg
 $tableBg: #fff;
+
+$fontShape: 'NanumSquareRound';
 
 //scss 파일 분화
 @import "mixin.scss";//공통 mixin

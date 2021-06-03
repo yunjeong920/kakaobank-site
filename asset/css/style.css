@@ -48,8 +48,41 @@ a:hover {
   margin-top: 100px;
 }
 
-.inner:last-child {
-  margin-bottom: 100px;
+.text-wrap {
+  width: 1320px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.text-wrap h3 {
+  font-size: 40px;
+  color: #111111;
+}
+
+.text-wrap p {
+  margin-top: 30px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.expand {
+  flex-direction: column;
+}
+
+.expand p {
+  font-size: 18px;
+}
+
+.card-img {
+  display: flex;
+  justify-content: space-around;
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.card-img img {
+  width: 240px;
+  height: auto;
 }
 
 .box {
@@ -81,6 +114,7 @@ a:hover {
 .box .items img {
   width: 500px;
   height: auto;
+  z-index: 10;
 }
 
 .box.items_2 .items {
@@ -359,6 +393,54 @@ table td {
   color: #999;
 }
 
+.intro-img {
+  width: 1320px;
+  height: 400px;
+  background: url("../img/com/com-img1.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left center;
+}
+
+.table2 {
+  margin-bottom: 150px;
+}
+
+.table-wrap {
+  width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  min-height: 1000px;
+}
+
+.table-wrap .table {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.table-wrap .table h6 {
+  color: #111111;
+  font-size: 22px;
+  margin-right: 80px;
+}
+
+.table-wrap .table ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+.table-wrap .table ul li {
+  display: flex;
+  font-weight: 500;
+}
+
+.table-wrap .table ul .one {
+  width: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .mainbg {
   height: 600px;
   background-size: cover;
@@ -405,9 +487,54 @@ table td {
   margin: 0 auto;
 }
 
+.down {
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.down .logo-bi {
+  width: 800px;
+  height: auto;
+}
+
+.down p {
+  color: #111111;
+  font-size: 30px;
+}
+
+.down .downbtn {
+  height: 120px;
+  margin-top: 80px;
+}
+
+.down .downbtn .play {
+  width: 200px;
+  height: 60px;
+  line-height: 50px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-family: "NanumSquareRound";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.down .downbtn .play img {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.down .downbtn .play:hover {
+  background: #ddd;
+  color: white;
+  transition: 0.6s;
+}
+
 .subpage main .container {
   width: 1320px;
   margin: 0 auto;
+  margin-bottom: 200px;
   display: flex;
 }
 
@@ -460,7 +587,7 @@ table td {
   content: '';
   position: absolute;
   height: 3px;
-  background: #f1f1f1;
+  background: #99A5CD;
   bottom: 0;
   left: 0;
   right: 0;
@@ -469,7 +596,7 @@ table td {
 .subpage main .container .inner + .inner {
   margin-top: 50px;
   padding-top: 50px;
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid #ddd;
 }
 
 .subpage main .container .inner.kakao_map {
@@ -485,6 +612,80 @@ table td {
   float: right;
 }
 
-.subpage main .container .inner .box {
-  flex-wrap: wrap;
+.qna-wrap {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.qna-wrap .qna-text {
+  display: flex;
+  align-items: center;
+}
+
+.qna-wrap .qna-text .qna1 {
+  color: #111111;
+  font-size: 20px;
+  padding-left: 30px;
+  margin-right: 70px;
+}
+
+.qna-wrap span {
+  display: block;
+  margin: 30px 0;
+}
+
+.mini-img {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-img h5 {
+  color: #333;
+  font-size: 30px;
+}
+
+.mini-img p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.mini-img .mini {
+  width: 250px;
+}
+
+.mini-txt {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.mini-img2 {
+  position: absolute;
+  left: 66%;
+  margin-top: 20px;
+}
+
+.mini-img2 img {
+  width: 80px;
+}
+
+.minibtn {
+  margin-top: 100px;
+  width: 300px;
+}
+
+.img-bg {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #ccc;
+}
+
+.img-bg2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #99A5CD;
 }

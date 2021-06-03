@@ -188,3 +188,45 @@
     }
   }
 }
+
+.intro-img{
+  width: $siteWidth;
+  height: 400px;
+  background: url('../img/com/com-img1.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left center;
+}
+
+.table2{
+  margin-bottom: 150px;
+}
+.table-wrap{
+  width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  min-height: 1000px;
+  .table{
+    display: flex;
+    margin-bottom: 30px;
+    h6{
+      color: $fontColorTitle;
+      font-size: $titleFontSizeSmall;
+      margin-right: 80px;
+    }
+    ul{
+      display: flex;
+      padding: 10px 0;
+      li{
+        display: flex;
+        font-weight: 500;
+      }
+      .one{
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
