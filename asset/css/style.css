@@ -160,13 +160,12 @@ a:hover {
 
 table {
   width: 100%;
-  table-layout: fixed;
   /*table의 너비를 고정할때 : 각각의 셀요소의 너비가 고정값이 있다면 늘어나거나 줄어들지않게 한다*/
   border-collapse: collapse;
 }
 
 table thead th {
-  background: #fff;
+  background: #3e4459;
   color: white;
 }
 
@@ -174,20 +173,42 @@ table th {
   padding: 20px 15px;
   text-align: left;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   color: #111111;
   text-transform: uppercase;
 }
 
 table td {
+  cursor: pointer;
   padding: 15px;
   margin: 0;
   text-align: left;
   vertical-align: middle;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   color: #111111;
   border-bottom: 1px solid #f1f1f1;
+}
+
+.page {
+  width: 1320px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.page .num-page {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: "NanumSquareRound";
+  font-size: 18px;
+  padding: 10px;
+}
+
+.page .num-page:first-child {
+  color: #111111;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #wrap {
@@ -250,6 +271,7 @@ table td {
   left: 0;
   opacity: 0;
   transition: .5s;
+  z-index: 30;
 }
 
 #wrap #header #top_nav ul li .submenu li {
