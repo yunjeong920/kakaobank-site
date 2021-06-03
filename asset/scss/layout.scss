@@ -75,7 +75,7 @@
   }
   //하단영역
   #footer{
-    color: $fontColorPrimary;
+    color: $fontColorTitle;
     font-size: 14px;
     .footer_top{
       padding: 60px 0 30px;
@@ -121,7 +121,7 @@
             position: relative;
             font-size: 14px;
             font-weight: 700;
-            color: $fontColorPrimary;
+            color: $fontColorTitle;
             text-transform: uppercase;
             padding-bottom: 12px;
             margin-bottom: 20px;

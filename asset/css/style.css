@@ -1,11 +1,19 @@
 @charset "UTF-8";
 /*initial css*/
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   height: 100%;
+  font-family: 'NEXON Lv1 Gothic OTF';
 }
 
 body {
-  background: #fff3c4;
+  background: #fff;
   color: #666666;
 }
 
@@ -20,12 +28,12 @@ li {
 
 a {
   text-decoration: none;
-  color: #b8944d;
+  color: #111111;
   transition: .5s;
 }
 
 a:hover {
-  color: #e3a936;
+  color: #fede22;
 }
 
 .box {
@@ -41,7 +49,7 @@ a:hover {
 }
 
 .box .items .title {
-  font-size: 26px;
+  font-size: 40px;
 }
 
 .box .items img {
@@ -63,14 +71,14 @@ a:hover {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background: #b8944d;
+  background: #fede22;
   color: white;
-  border: 1px solid #b8944d;
+  border: 1px solid #ddd;
 }
 
 .gbtn:hover {
   background: white;
-  color: #b8944d;
+  color: #fede22;
 }
 
 table {
@@ -81,7 +89,7 @@ table {
 }
 
 table thead th {
-  background: #b8944d;
+  background: #fff;
   color: white;
 }
 
@@ -90,7 +98,7 @@ table th {
   text-align: left;
   font-weight: 500;
   font-size: 12px;
-  color: #b8944d;
+  color: #111111;
   text-transform: uppercase;
 }
 
@@ -101,8 +109,8 @@ table td {
   vertical-align: middle;
   font-weight: 300;
   font-size: 12px;
-  color: #b8944d;
-  border-bottom: 1px solid #b8944d;
+  color: #111111;
+  border-bottom: 1px solid #ddd;
 }
 
 #wrap {
@@ -157,7 +165,7 @@ table td {
 
 #wrap #header #top_nav ul li .submenu {
   position: absolute;
-  border: 1px solid #b8944d;
+  border: 1px solid #ddd;
   visibility: hidden;
   top: calc( 100% - 3px);
   left: 0;
@@ -184,7 +192,7 @@ table td {
 }
 
 #wrap #header #top_nav ul li .submenu li:hover {
-  background: #b8944d;
+  background: #fede22;
 }
 
 #wrap #header #top_nav ul li .submenu li:hover a {
@@ -192,7 +200,7 @@ table td {
 }
 
 #wrap #footer {
-  color: #b8944d;
+  color: #111111;
   font-size: 14px;
   /* footer container 공통 스타일 */
 }
@@ -246,7 +254,7 @@ table td {
   position: relative;
   font-size: 14px;
   font-weight: 700;
-  color: #b8944d;
+  color: #111111;
   text-transform: uppercase;
   padding-bottom: 12px;
   margin-bottom: 20px;
@@ -263,16 +271,16 @@ table td {
 
 #wrap #footer .container .row .column h4:before {
   right: 0;
-  background: #997939;
+  background: #ddd;
 }
 
 #wrap #footer .container .row .column h4:after {
   width: 60px;
-  background: #b8944d;
+  background: #ddd;
 }
 
 #wrap #footer .container .row .column ul li {
-  border-bottom: 1px solid #b8944d;
+  border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
 
@@ -295,7 +303,7 @@ table td {
 }
 
 #wrap #footer .container .row .column.news input[type=submit] {
-  background: #b8944d;
+  background: #fede22;
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -305,7 +313,7 @@ table td {
 
 .mainbanner {
   height: 550px;
-  background: url("../img/main_banner.jpg") no-repeat;
+  background: url("../img/main_banner.png") no-repeat;
   background-size: cover;
 }
 
@@ -322,7 +330,7 @@ table td {
 }
 
 .subpage main .container #lnb ul li {
-  border-bottom: 1px solid #b8944d;
+  border-bottom: 1px solid #ddd;
 }
 
 .subpage main .container #lnb ul li a {
@@ -341,7 +349,7 @@ table td {
 
 .subpage main .container #lnb ul li a.on {
   color: white;
-  background: #b8944d;
+  background: #fede22;
   padding-left: 20px;
 }
 
@@ -360,7 +368,7 @@ table td {
   content: '';
   position: absolute;
   height: 3px;
-  background: #b8944d;
+  background: #ddd;
   bottom: 0;
   left: 0;
   right: 0;
@@ -369,7 +377,7 @@ table td {
 .subpage main .container .inner + .inner {
   margin-top: 50px;
   padding-top: 50px;
-  border-top: 1px solid #b8944d;
+  border-top: 1px solid #ddd;
 }
 
 .subpage main .container .inner.kakao_map {

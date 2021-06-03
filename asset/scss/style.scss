@@ -1,7 +1,42 @@
 @charset "UTF-8";
 
+//변수처리
+
+//size width
+$siteWidth: 1320px;
+
+//text size
+$fontSizeSmall: 12px;
+$fontSizeNormal: 16px;
+$fontSizeMid: 18px;
+$fontSizeSBig: 20px;
+
+//title text size
+$titleFontSizeSmall: 22px;
+$titleFontSizeNormal: 26px;
+$titleFontSizeMid: 40px;
+$titleFontSizeBig: 46px;
+
+//background color
+$layoutBg: #fff;
+
+//font color
+$fontColorBasic: #666666;
+$fontColorTitle: #111111;
+$fontColorHover: #fede22;
+
+//border color
+$borderColorPrimary: #ddd;
+$borderColor: #ddd;
+
+//button color
+$gbtnColor: #fede22;
+$gbtnColorHover: #e3a936;
+
+//table bg
+$tableBg: #fff;
+
 //scss 파일 분화
-@import "var.scss";//공통 변수
 @import "mixin.scss";//공통 mixin
 @import "initial.scss";// css 초기화
 @import "common.scss";// 공통 요소
@@ -11,4 +46,4 @@
 //페이지 분화
 @import "main.scss";// 메인페이지
 @import "subpage.scss";// 서브페이지
-// @import "gallery.scss";// 갤러리페이지
+@import "event.scss";// 갤러리페이지
