@@ -1,15 +1,17 @@
 @charset "UTF-8";
 /*initial css*/
 @font-face {
-  font-family: 'NEXON Lv1 Gothic OTF';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
+  font-family: 'NanumSquareRound';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 html, body {
   height: 100%;
-  font-family: 'NEXON Lv1 Gothic OTF';
+  font-family: 'NanumSquareRound';
+  font-weight: 600;
+  word-break: keep-all;
 }
 
 body {
@@ -33,52 +35,93 @@ a {
 }
 
 a:hover {
-  color: #fede22;
+  color: #6A759B;
+}
+
+.inner {
+  width: 1320px;
+  margin: 0 auto;
+  height: 800px;
+}
+
+.inner:first-child {
+  margin-top: 100px;
+}
+
+.inner:last-child {
+  margin-bottom: 100px;
 }
 
 .box {
+  width: 1320px;
+  height: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .box .items {
+  width: 600px;
   box-sizing: border-box;
   padding: 50px;
-  flex: 100%;
   flex-shrink: 0;
   font-size: 18px;
 }
 
 .box .items .title {
   font-size: 40px;
+  color: #111111;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.box .items p {
+  margin-bottom: 30px;
 }
 
 .box .items img {
-  width: 100%;
+  width: 500px;
+  height: auto;
 }
 
 .box.items_2 .items {
-  flex: 50%;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .box.expand .items {
   padding: 50px 0;
 }
 
+.box .two {
+  text-align: right;
+}
+
+.box .three img {
+  height: auto;
+  width: 480px;
+}
+
+.box .bankbtn {
+  margin-bottom: 50px;
+}
+
 .gbtn {
   display: inline-block;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 25px;
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background: #fede22;
+  background: #3e4459;
   color: white;
-  border: 1px solid #ddd;
+  border: 1.5px solid #3e4459;
 }
 
 .gbtn:hover {
   background: white;
-  color: #fede22;
+  color: #3e4459;
 }
 
 table {
@@ -110,15 +153,17 @@ table td {
   font-weight: 300;
   font-size: 12px;
   color: #111111;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 #wrap {
-  width: 1320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 #wrap #header {
+  width: 1320px;
+  margin: 0 auto;
   position: relative;
   height: 60px;
 }
@@ -165,7 +210,7 @@ table td {
 
 #wrap #header #top_nav ul li .submenu {
   position: absolute;
-  border: 1px solid #ddd;
+  border: 1px solid #f1f1f1;
   visibility: hidden;
   top: calc( 100% - 3px);
   left: 0;
@@ -192,7 +237,7 @@ table td {
 }
 
 #wrap #header #top_nav ul li .submenu li:hover {
-  background: #fede22;
+  background: #3e4459;
 }
 
 #wrap #header #top_nav ul li .submenu li:hover a {
@@ -200,7 +245,7 @@ table td {
 }
 
 #wrap #footer {
-  color: #111111;
+  background: #3e4459;
   font-size: 14px;
   /* footer container 공통 스타일 */
 }
@@ -232,16 +277,6 @@ table td {
   flex-shrink: 0;
 }
 
-#wrap #footer .container .row .footer_logo h3 {
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 1;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0px;
-  letter-spacing: 3px;
-  text-transform: capitalize;
-}
-
 #wrap #footer .container .row .column {
   flex: 25%;
   box-sizing: border-box;
@@ -254,7 +289,7 @@ table td {
   position: relative;
   font-size: 14px;
   font-weight: 700;
-  color: #111111;
+  color: #ddd;
   text-transform: uppercase;
   padding-bottom: 12px;
   margin-bottom: 20px;
@@ -271,16 +306,16 @@ table td {
 
 #wrap #footer .container .row .column h4:before {
   right: 0;
-  background: #ddd;
+  background: #6A759B;
 }
 
 #wrap #footer .container .row .column h4:after {
   width: 60px;
-  background: #ddd;
+  background: #f1f1f1;
 }
 
 #wrap #footer .container .row .column ul li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #888;
   padding: 10px 0;
 }
 
@@ -288,8 +323,17 @@ table td {
   padding-top: 0;
 }
 
+#wrap #footer .container .row .column ul li a {
+  color: #ccc;
+}
+
 #wrap #footer .container .row .column p {
+  color: #ccc;
   line-height: 26px;
+}
+
+#wrap #footer .container .row .column p a {
+  color: #999;
 }
 
 #wrap #footer .container .row .column.news input {
@@ -303,7 +347,7 @@ table td {
 }
 
 #wrap #footer .container .row .column.news input[type=submit] {
-  background: #fede22;
+  background: #99A5CD;
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -311,13 +355,59 @@ table td {
   color: #ffffff;
 }
 
-.mainbanner {
-  height: 550px;
-  background: url("../img/main_banner.png") no-repeat;
+#wrap .credits a {
+  color: #999;
+}
+
+.mainbg {
+  height: 600px;
   background-size: cover;
+  background: #3e4459;
+  position: relative;
+}
+
+.mainbg .main-text {
+  width: 1320px;
+  display: inline-block;
+  height: 100%;
+  transform: translate(25%, 25%);
+}
+
+.mainbg .main-text h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.mainbg .main-text span {
+  margin: 35px 0;
+  display: block;
+  width: 60px;
+  height: 3px;
+  border-radius: 25px;
+  background: #fff;
+  opacity: 0.4;
+}
+
+.mainbg .main-text p {
+  color: white;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.mainbg img {
+  position: absolute;
+  top: 31.5%;
+  left: 45%;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
 }
 
 .subpage main .container {
+  width: 1320px;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -330,7 +420,7 @@ table td {
 }
 
 .subpage main .container #lnb ul li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .subpage main .container #lnb ul li a {
@@ -349,11 +439,13 @@ table td {
 
 .subpage main .container #lnb ul li a.on {
   color: white;
-  background: #fede22;
+  background: #3e4459;
   padding-left: 20px;
 }
 
 .subpage main .container .content {
+  width: 1320px;
+  margin: 0 auto;
   min-height: 500px;
 }
 
@@ -368,7 +460,7 @@ table td {
   content: '';
   position: absolute;
   height: 3px;
-  background: #ddd;
+  background: #f1f1f1;
   bottom: 0;
   left: 0;
   right: 0;
@@ -377,7 +469,7 @@ table td {
 .subpage main .container .inner + .inner {
   margin-top: 50px;
   padding-top: 50px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #f1f1f1;
 }
 
 .subpage main .container .inner.kakao_map {

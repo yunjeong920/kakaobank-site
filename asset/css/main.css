@@ -1,5 +1,5 @@
-.mainbanner {
-  height: 550px;
-  background: url("../img/main_banner.png") no-repeat;
+.mainbg {
+  height: 600px;
   background-size: cover;
+  background: #3e4459;
 }

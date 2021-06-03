@@ -1,6 +1,41 @@
 //메인페이지
-.mainbanner{
-  height: 550px;
-  background: url('../img/main_banner.png') no-repeat;
+.mainbg{
+  height: 600px;
   background-size: cover;
+  background: #3e4459;
+  position: relative;
+  .main-text{
+    width: $siteWidth;
+    display: inline-block;
+    height: 100%;
+    transform: translate(25%, 25%);
+    h1{
+      color: white;
+      font-size: $titleFontSizeBig;
+    }
+    span{
+      margin: 35px 0;
+      display: block;
+      width: 60px;
+      height: 3px;
+      border-radius: 25px;
+      background: $layoutBg;
+      opacity: 0.4;
+    }
+    p{
+      color: white;
+      font-size: $fontSizeSBig;
+      line-height: 35px;
+    }
+  }
+  img{
+    position: absolute;
+    top: 31.5%;
+    left: 45%;
+  }
+}
+
+.container{
+  width: $siteWidth;
+  margin: 0 auto;
 }

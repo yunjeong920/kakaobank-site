@@ -1,5 +1,7 @@
 .subpage{
   main .container{
+    width: $siteWidth;
+    margin: 0 auto;
     display: flex;
     #lnb{
       flex: 230px;
@@ -31,6 +33,8 @@
       }
     }//lnb
     .content{
+      width: $siteWidth;
+      margin: 0 auto;
       min-height: 500px;
     }
     .sub_title {

@@ -5,6 +5,7 @@
   <title>이윤정 0604 Sass 페이지</title>
   <meta name="description" content="sass site add footer style">
   <link rel="stylesheet" href="./asset/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/common.js"></script>
   <!--[if lt IE 9]>
@@ -35,34 +36,62 @@
    </header>
    <main>
      <!-- 메인배너 영역-->
-     <div class="mainbanner"></div>
+     <div class="mainbg">
+       <div class="main-text">
+         <h1>같지만 다른 은행<br>카카오뱅크</h1>
+         <span></span>
+         <p>일상에서 더 쉽게, 더 자주 만나는 은행<br>카카오뱅크가 한번 더 편리해졌습니다.</p>
+       </div>
+       <img src="./asset/img/kakaofamily.png" alt="">
+     </div>
      <!-- 컨텐츠 영역 -->
      <div class="container">
        <div class="content">
          <div class="inner">
            <div class="box items_2">
-             <div class="items"><!--왼쪽 영역-->
-               <h3 class="title">funiture</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-               <a href="./product/product.html" class="gbtn">More View</a>
+             <div class="items" data-aos="fade-right" data-aos-duration="2000"><!--왼쪽 영역-->
+               <h3 class="title">모바일로 더 손쉬운<br>계좌개설, 간편한 이체</h3>
+               <p>인증서, OTP 없이 계좌 개설이 간편합니다.<br>여러 건의 이체도 몇 번의 터치로 손쉽게 보낼 수 있습니다.</p>
+               <span><a href="./product/product.html" class="gbtn">카카오뱅크 입출금통장   〉</a></span>
              </div>
-             <div class="items"><!--오른쪽영역 영역-->
-               <img src="./asset/img/thumb_nail01.jpg" alt="thumb01">
+             <div class="items" data-aos="fade-left" data-aos-duration="2000"><!--오른쪽영역 영역-->
+               <img src="./asset/img/main1.png" alt="thumb01">
              </div>
            </div>
          </div>
          <div class="inner">
            <div class="box items_2">
-             <div class="items"><!--왼쪽 영역-->
-               <img src="./asset/img/thumb_nail02.jpg" alt="thumb02">
+             <div class="items" data-aos="fade-right" data-aos-duration="2000"><!--왼쪽 영역-->
+               <img src="./asset/img/main2.png" alt="thumb02">
              </div>
-             <div class="items"><!--오른쪽영역 영역-->
-               <h3 class="title">funiture</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-               <a href="./product/product.html" class="gbtn">More View</a>
+             <div class="items two" data-aos="fade-left" data-aos-duration="2000"><!--오른쪽영역 영역-->
+               <h3 class="title">함께 도전해서<br>재미있는 26주적금</h3>
+               <p>26주동안 변화하는 재미에 빠져있는 사이<br>어느덧 만기 달성 경험을 맛보게 됩니다.</p>
+               <span><a href="./product/product.html" class="gbtn">카카오뱅크 26주적금   〉</a></span>
              </div>
            </div>
          </div>
+         <div class="inner">
+           <div class="box items_2">
+             <div class="items" data-aos="fade-right" data-aos-duration="2000"><!--왼쪽 영역-->
+               <h3 class="title">우대조건 없이<br>합리적인 예금과 적금</h3>
+               <p>기대했던 금리와 다르게 복잡한 우대조건에 실망한 적이 있었나요?<br>카카오뱅크의 예금, 적금은 숨겨진 우대조건 없이 누구에게나 편리하고 합리적입니다.</p>
+               <div class="bankbtn">
+                 <span class="btns"><a href="./product/product.html" class="gbtn">정기예금   〉</a></span>
+                 <span class="btns"><a href="./product/product.html" class="gbtn">자유적금   〉</a></span>
+               </div>
+               <img src="./asset/img/main4-1.png" alt="">
+             </div>
+             <div class="items three" data-aos="fade-left" data-aos-duration="2000"><!--오른쪽영역 영역-->
+               <img src="./asset/img/main4.png" alt="thumb01">
+             </div>
+           </div>
+         </div>
+         <div class="down">
+           <button type="button" class="down">Google Play</button>
+           <button type="button" class="down">App Store</button>
+         </div>
+
        </div>
      </div>
    </main>
@@ -74,11 +103,11 @@
          <div class="row">
            <div class="column footer_logo">
              <!-- footer logo -->
-             <h3>logo</h3>
+             <img src="./asset/img/logo_white.svg" alt="">
            </div>
            <div class="column">
              <!-- site map -->
-             <h4>site map</h4>
+             <h4>SITE MAP</h4>
              <ul>
                <li><a href="./company/introduce.html">카카오뱅크</a></li>
                <li><a href="./product/product.html">Mini</a></li>
@@ -89,23 +118,23 @@
            </div>
            <div class="column">
              <!-- contact us -->
-             <h4>contact us</h4>
+             <h4>INFO</h4>
              <p>
-               A108 Adam street<br>
-               New York, NY 535022<br>
-               United states<br>
+               모바일뱅킹 서비스 이용약관<br>
+               전자금융거래 기본약관<br>
+               개인정보처리방침<br>
+               전자민원접수<br>
                <strong>phone&nbsp;:&nbsp;</strong><a href="tel=+82-010-0000-0000">+82-010-0000-0000</a><br>
                <strong>Email&nbsp;:&nbsp;</strong><a href="mailto=mymail@naver.com">mymail@naver.com</a><br>
              </p>
            </div>
            <div class="column news">
              <!-- news -->
-             <h4>news</h4>
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet,
-               consectetur adipisicing elit
-             </p>
+             <h4>SNS</h4>
+             <p><a href="https://www.facebook.com/kakaobank.official">Facebook</a></p>
+             <p><a href="https://blog.kakaobank.com/">Blog</a></p>
+             <p><a href="https://post.naver.com/my.nhn?memberNo=37255644&navigationType=push">Naver post</a></p>
+             <p><a href="https://www.youtube.com/kakaobank">Youtube</a></p>
              <form action="">
                <input type="search" name="search">
                <input type="submit" value="search">
@@ -117,13 +146,17 @@
      <div class="container">
        <!-- footer 하단 영역 -->
        <div class="coypyright">
-         ⓒcopryright <strong>mypage</strong> .All Rights Reserved.
+         ⓒcopryright Kakao bank<strong>Redesign page</strong> .All Rights Reserved.
        </div>
        <div class="credits">
-         Designed By <a href="mailto:mymail@naver.com">My Name</a>
+         Designed By <a href="mailto:mymail@naver.com">Lee yun jeong</a>
        </div>
      </div>
    </footer>
  </div>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
 </body>
 </html>

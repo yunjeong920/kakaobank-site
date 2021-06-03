@@ -1,8 +1,10 @@
 //layout 공통
 #wrap{
-  width: $siteWidth;
+  width: 100%;
   margin: 0 auto;
   #header{
+    width: $siteWidth;
+    margin: 0 auto;
     position: relative;
     height: 60px;
     #top_logo{
@@ -75,7 +77,7 @@
   }
   //하단영역
   #footer{
-    color: $fontColorTitle;
+    background: $backColor;
     font-size: 14px;
     .footer_top{
       padding: 60px 0 30px;
@@ -101,15 +103,6 @@
             flex-grow: 0;
             flex-shrink: 0;
           }
-          h3{
-            font-size: 34px;
-            font-weight: 700;
-            line-height: 1;
-            margin: 0 0 20px 0;
-            padding: 2px 0 2px 0px;
-            letter-spacing: 3px;
-            text-transform: capitalize;
-          }
         }
 
         .column{
@@ -121,7 +114,7 @@
             position: relative;
             font-size: 14px;
             font-weight: 700;
-            color: $fontColorTitle;
+            color: $fontColorLight;
             text-transform: uppercase;
             padding-bottom: 12px;
             margin-bottom: 20px;
@@ -148,16 +141,23 @@
           /*list style*/
           ul{
             li{
-              border-bottom: 1px solid $borderColorPrimary;
+              border-bottom: 1px solid #888;
               padding: 10px 0;
               &:nth-child(1){
                 padding-top: 0;
               }
+              a{
+                color: $fontColorMid;
+              }
             }
           }
 
-          p{
+          p,{
+            color: $fontColorMid;
             line-height: 26px;
+            a{
+              color: #999;
+            }
           }
 
           &.news{
@@ -169,7 +169,7 @@
                 width: 65%;
               }
               &[type=submit]{
-                background: $gbtnColor;
+                background: $gbtnColorHover;
                 border: 0;
                 width: 35%;
                 padding: 6px 0;
@@ -182,4 +182,9 @@
       }//.row end
     }//.container
   }//#footer end
+  .credits{
+    a{
+      color: #999;
+    }
+  }
 }

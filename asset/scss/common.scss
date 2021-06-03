@@ -1,0 +1,8 @@
+.inner{
+  width: $siteWidth;
+  margin: 0 auto;
+  height: 800px;
+  &:first-child{
+    margin-top: 100px;
+  }
+}
