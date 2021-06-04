@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
-  <title>gallery</title>
+  <title>event</title>
   <meta name="description" content="gallery content">
+  <link rel="stylesheet" href="../asset/css/swiper.min.css">
   <link rel="stylesheet" href="../asset/css/style.css">
-  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" defer src="../js/jquery.min.js"></script>
   <script type="text/javascript" src="../js/common.js"></script>
+  <script type="text/javascript" src="../js/swiper.min.js"></script>
+  <script type="text/javascript" defer src="../js/slide.js"></script>
   <!--[if lt IE 9]>
   <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
+
 <body class="subpage">
- <div id="wrap">
-   <header id="header">
+  <div id="wrap">
+    <header id="header">
       <!-- 헤더 영역  -->
       <h1 id="top_logo"><a href="../index.html"><img src="../asset/img/logo_black.svg" alt=""></a></h1>
       <nav id="top_nav">
@@ -32,83 +37,133 @@
           <li><a href="../location/location.html">오시는 길</a></li>
         </ul>
       </nav>
-   </header>
-   <main>
-     <!-- 컨텐츠 영역 -->
-     <div class="container">
-       <!-- 왼쪽메뉴 -->
-       <aside id="lnb">
-         <ul>
-           <li><a href="./gallery.html" class="on">Gallery</a></li>
-         </ul>
-       </aside>
-       <!-- 컨텐츠 본문 -->
-       <div class="content">
-         <h2 class="sub_title"><span>Gallery</span></h2>
-         <div class="inner">
-            gallery  layout  구현
-         </div>
-       </div>
-     </div>
-   </main>
-   <!-- 하단 영역 -->
-   <footer id="footer">
-     <div class="footer_top">
-       <!-- footer 상단 영역 -->
-       <div class="container">
-         <div class="row">
-           <div class="column footer_logo">
-             <!-- footer logo -->
-             <img src="../asset/img/logo_white.svg" alt="">
-           </div>
-           <div class="column">
-             <!-- site map -->
-             <h4>SITE MAP</h4>
-             <ul>
-               <li><a href="../company/introduce.html">카카오뱅크</a></li>
-               <li><a href="../product/product.html">Mini</a></li>
-               <li><a href="../community/notice.html">공지사항</a></li>
-               <li><a href="../event/event.html">이벤트</a></li>
-               <li><a href="../location/location.html">오시는 길</a></li>
-             </ul>
-           </div>
-           <div class="column">
-             <!-- contact us -->
-             <h4>INFO</h4>
-             <p>
-               모바일뱅킹 서비스 이용약관<br>
-               전자금융거래 기본약관<br>
-               개인정보처리방침<br>
-               전자민원접수<br>
-               <strong>phone&nbsp;:&nbsp;</strong><a href="tel=+82-1599-3333">1599-3333</a><br>
-               <strong>phone&nbsp;:&nbsp;;</strong><a href="tel=+82-2-6420-3333">헤외 : +82-2-6420-3333</a><br>
-             </p>
-           </div>
-           <div class="column news">
-             <!-- news -->
-             <h4>SNS</h4>
-             <p><a href="https://www.facebook.com/kakaobank.official">Facebook</a></p>
-             <p><a href="https://blog.kakaobank.com/">Blog</a></p>
-             <p><a href="https://post.naver.com/my.nhn?memberNo=37255644&navigationType=push">Naver post</a></p>
-             <p><a href="https://www.youtube.com/kakaobank">Youtube</a></p>
-             <form action="">
-               <input type="search" name="search">
-               <input type="submit" value="search">
-             </form>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="container">
-       <!-- footer 하단 영역 -->
-       <div class="coypyright">
-         ⓒcopryright Kakao bank<strong>Redesign page</strong> .All Rights Reserved.
-       </div>
-       <div class="credits">
-         Designed By <a href="mailto:mymail@naver.com">Lee yun jeong</a>
-       </div>
-     </div>
-   </footer>
- </div>
+    </header>
+    <main>
+      <!-- 컨텐츠 영역 -->
+      <div class="container">
+        <!-- 왼쪽메뉴 -->
+        <aside id="lnb">
+          <ul>
+            <li><a href="./gallery.html" class="on">이벤트</a></li>
+          </ul>
+        </aside>
+        <!-- 컨텐츠 본문 -->
+        <div class="content">
+          <h2 class="sub_title"><span>이벤트</span></h2>
+          <div class="inner">
+            <div class="swiper-container firstSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide one">
+                  <img src="../asset/img/event/event1.png" alt="">
+                  <div class="tag-wrap">
+                    <p class="tag">#주식계좌 #개설혜택</p>
+                    <p>증권사 주식계좌 개설 이벤트(5월~6월)</p>
+                    <p class="day">2021.05.01 ~ 06.30</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide two">
+                  <img src="../asset/img/event/event2.png" alt="">
+                  <div class="tag-wrap">
+                    <p class="tag">#제휴신용카드 #혜택증정</p>
+                    <p>제휴 신용카드 이용고객 대상 이벤트 (6월)</p>
+                    <p class="day">2021.05.31 ~ 06.30</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide three">
+                  <img src="../asset/img/event/event3.png" alt="">
+                  <div class="tag-wrap">
+                    <p class="tag">#체크카드 #캐시백 #시즌8</p>
+                    <p>카카오뱅크 프렌즈 체크카드 매월 33,000원의 추가 혜택</p>
+                    <p class="day">2021.02.01 ~ 07.31</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide four">
+                  <img src="../asset/img/event/event4.png" alt="">
+                  <div class="tag-wrap">
+                    <p class="tag">#오픈뱅킹 #가져오기이벤트</p>
+                    <p>여기저기 흩어져있는 내 돈 '가져오기' 이벤트</p>
+                    <p class="day">2021.03.01 ~ 06.30</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide five">
+                  <img src="../asset/img/event/event5.png" alt="">
+                  <div class="tag-wrap">
+                    <p class="tag">#mini #영상이벤트</p>
+                    <p>우리는 mini를 이렇게 씁니다</p>
+                    <p class="day">2021.01.08 ~ 06.30</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 하단 영역 -->
+    <footer id="footer">
+      <div class="footer_top">
+        <!-- footer 상단 영역 -->
+        <div class="container">
+          <div class="row">
+            <div class="column footer_logo">
+              <!-- footer logo -->
+              <img src="../asset/img/logo_white.svg" alt="">
+            </div>
+            <div class="column">
+              <!-- site map -->
+              <h4>SITE MAP</h4>
+              <ul>
+                <li><a href="../company/introduce.html">카카오뱅크</a></li>
+                <li><a href="../product/product.html">Mini</a></li>
+                <li><a href="../community/notice.html">공지사항</a></li>
+                <li><a href="../event/event.html">이벤트</a></li>
+                <li><a href="../location/location.html">오시는 길</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <!-- contact us -->
+              <h4>INFO</h4>
+              <p>
+                모바일뱅킹 서비스 이용약관<br>
+                전자금융거래 기본약관<br>
+                개인정보처리방침<br>
+                전자민원접수<br>
+                <strong>phone&nbsp;:&nbsp;</strong><a href="tel=+82-1599-3333">1599-3333</a><br>
+                <strong>phone&nbsp;:&nbsp;</strong><a href="tel=+82-2-6420-3333">헤외 : +82-2-6420-3333</a><br>
+              </p>
+            </div>
+            <div class="column news">
+              <!-- news -->
+              <h4>SNS</h4>
+              <p><a href="https://www.facebook.com/kakaobank.official">Facebook</a></p>
+              <p><a href="https://blog.kakaobank.com/">Blog</a></p>
+              <p><a href="https://post.naver.com/my.nhn?memberNo=37255644&navigationType=push">Naver post</a></p>
+              <p><a href="https://www.youtube.com/kakaobank">Youtube</a></p>
+              <form action="">
+                <input type="search" name="search">
+                <input type="submit" value="search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <!-- footer 하단 영역 -->
+        <div class="coypyright">
+          ⓒcopryright Kakao bank<strong>Redesign page</strong> .All Rights Reserved.
+        </div>
+        <div class="credits">
+          Designed By <a href="mailto:mymail@naver.com">Lee yun jeong</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
