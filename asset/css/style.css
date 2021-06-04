@@ -716,6 +716,49 @@ table td {
   background: #99A5CD;
 }
 
+.container {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.container .tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .tabs li {
+  background: none;
+  color: #99A5CD;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .tabs li.current {
+  color: #3e4459;
+}
+
+.container .tab-content {
+  display: none;
+}
+
+.container .tab-content.current {
+  display: block;
+}
+
+#tab-1 {
+  height: 600px;
+}
+
+#tab-2 {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+  height: 600px;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;

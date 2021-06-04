@@ -151,3 +151,39 @@
   height: 500px;
   background: $gbtnColorHover;
 }
+
+.container{
+  width: 100%;
+  margin-top: 90px;
+  .tabs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+      background: none;
+      color: $gbtnColorHover;
+      width: 60px;
+      text-align: center;
+      cursor: pointer;
+      &.current{
+        color: $gbtnColor;
+      }
+    }
+  }
+  .tab-content{
+    display: none;
+    &.current{
+      display: block;
+    }
+  }
+}
+#tab-1{
+  height: 600px;
+}
+#tab-2{
+  margin: 0;
+  padding: 0;
+  border-top: none;
+  height: 600px;
+}
