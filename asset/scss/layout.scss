@@ -93,8 +93,14 @@
       margin: 0 auto;
       width: $siteWidth;
       .row{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-lines: multiple;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
         /* footer logo */
@@ -208,6 +214,8 @@
   margin: 0 auto;
   min-height: 1000px;
   .table{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px;
     h6{
@@ -216,9 +224,13 @@
       margin-right: 80px;
     }
     ul{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding: 10px 0;
       li{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         font-weight: 500;
       }

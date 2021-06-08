@@ -66,6 +66,8 @@ a:hover {
 }
 
 .expand {
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -74,6 +76,8 @@ a:hover {
 }
 
 .card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
   width: 1320px;
@@ -119,8 +123,14 @@ a:hover {
 
 .box.items_2 .items {
   width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -321,8 +331,14 @@ table td {
 }
 
 #wrap #footer .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-lines: multiple;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   /* footer logo */
 }
@@ -436,6 +452,8 @@ table td {
 }
 
 .table-wrap .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
 }
@@ -447,11 +465,15 @@ table td {
 }
 
 .table-wrap .table ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px 0;
 }
 
 .table-wrap .table ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: 500;
 }
@@ -561,6 +583,8 @@ table td {
   width: 1320px;
   margin: 0 auto;
   margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -645,7 +669,11 @@ table td {
 }
 
 .qna-wrap .qna-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -663,8 +691,14 @@ table td {
 
 .mini-img {
   height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -723,8 +757,14 @@ table td {
 
 .container .tabs {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -771,16 +811,15 @@ table td {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 

@@ -3,6 +3,8 @@
     width: $siteWidth;
     margin: 0 auto;
     margin-bottom: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     #lnb{
       flex: 230px;
@@ -86,7 +88,11 @@
   margin: 0 auto;
   text-align: center;
   .qna-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     .qna1{
       color: $fontColorTitle;
@@ -103,8 +109,14 @@
 
 .mini-img{
   height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   h5{
     color: #333;
@@ -157,8 +169,14 @@
   margin-top: 90px;
   .tabs{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     li{
       background: none;
