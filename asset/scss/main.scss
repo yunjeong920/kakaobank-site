@@ -6,9 +6,20 @@
   position: relative;
   .main-text{
     width: $siteWidth;
-    display: inline-block;
     height: 100%;
-    transform: translate(25%, 25%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
     h1{
       color: white;
       font-size: $titleFontSizeBig;

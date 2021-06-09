@@ -1,5 +1,5 @@
 .inner{
-  width: $siteWidth;
+  width: $smallWidth;
   margin: 0 auto;
   height: 800px;
   &:first-child{
@@ -8,7 +8,7 @@
 }
 
 .text-wrap{
-  width: $siteWidth;
+  width: $smallWidth;
   text-align: center;
   margin-top: 100px;
   h3{
@@ -36,10 +36,10 @@
   display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
-  width: $siteWidth;
+  width: $smallWidth;
   margin: 0 auto;
   img{
-    width: 240px;
+    width: 180px;
     height: auto;
   }
 }
