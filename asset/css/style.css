@@ -783,14 +783,6 @@ table td {
   width: 300px;
 }
 
-.img-bg {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  left: 27%;
-  background: #ccc;
-}
-
 .img-bg2 {
   position: absolute;
   width: 400px;
@@ -873,7 +865,7 @@ table td {
 
 .swiper-slide img {
   display: block;
-  width: 800px;
+  width: 750px;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
